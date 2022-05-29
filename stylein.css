@@ -1,0 +1,67 @@
+*{
+  Font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    padding: 2rem;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    font-size: 1rem;
+  }
+  
+  
+  body {
+    font-family: system-ui, sans-serif;
+  }
+
+  .hero{
+    padding: 20rem;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    align-content: center;
+    
+    
+  }
+
+  
+  @media screen and (max-width){
+    .hero{
+      background-color: #f43b47;
+      color: aqua;
+    }
+
+
+  }
+
+  .redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, #2564c2 0%, #437eb9 48%, #6BBBFF 100%);
+  padding: 2rem;
+  
+
+}
+
+
