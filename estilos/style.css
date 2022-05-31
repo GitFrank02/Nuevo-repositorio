@@ -1,5 +1,5 @@
 *{
-  Font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family:  Epilogue,sans-serif;;
 }
 
 
@@ -10,9 +10,8 @@ header{
     background-image: linear-gradient(to bottom, #2564c2 0%, #437eb9 48%, #6BBBFF 100%);
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     box-sizing: border-box;
-    padding: 1rem 55rem;
+    padding: 1rem;
   }
   
   footer {
@@ -61,7 +60,7 @@ header{
     grid-template-columns:50% 50%;
     grid-template-rows:60%  auto;
     font-size: 1.7rem;
-    gap: 320px;
+    gap: 150px;
     
   }
 
@@ -72,9 +71,55 @@ header{
   
 
   main{
-    padding: 30rem;
+    padding: 25rem;
     background: linear-gradient(90deg, rgba(216,215,255,1) 0%, rgba(255,254,255,1) 50%, rgba(216,215,255,1) 100%);
   }
-    
+
+  .slide-left {
+    -webkit-animation: slide-left 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-left 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+ 
+
+ @-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
+.transicion{
+  background-color: #6BBBFF;
+  width: 70rem;
+  height: 13rem;
+  transform: translate(50px 100px);
+  transition: 3s, height 3.5s, width 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
+}
+
+.transicion:hover{
+  width: 50rem;
+  height: 40rem;
+  background-color: #2564c2;
+  
+}
   
