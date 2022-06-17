@@ -1,0 +1,16 @@
+@import "./variables/redes"
+
+$column: ( 
+        foto1: #55acee,
+        foto2:  #3a5795,
+        foto3: #C25E30
+        foto4: #79a387
+        foto5: #ddae99
+); 
+
+@each $blue, $color in $column {
+   .btn--#{$blue} {
+       background-color: $color;
+
+   }
+}
