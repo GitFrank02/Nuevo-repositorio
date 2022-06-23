@@ -1,0 +1,293 @@
+*{
+  font-family:  Epilogue,sans-serif;
+}
+
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    justify-content: space-between;
+    align-items: center;
+    box-sizing:border-box;
+    padding: 15px 0;
+
+
+  }
+  
+  
+  
+  body {
+    font-family: system-ui, sans-serif;
+  }
+
+  nav{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.1rem;
+
+  }
+
+  
+  
+ 
+  .redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: larger;
+  }
+    
+
+  
+  .grid{
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid: template rows 35%;
+    font-size: 1.7rem;
+    gap: 200px;
+    
+    
+  }
+
+  .grid div{
+  padding: 2rem;
+
+  }
+  
+
+  main{
+    padding: 25rem;
+    background-color: #eaf7f7;
+  }
+
+  .slide-left {
+    -webkit-animation: slide-left 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-left 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+ 
+
+ @-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
+
+  
+
+  
+footer{
+  width: 100%;
+  padding: 50px 0px;
+  background-image: url(../assets/footers/background-footer.svg);
+  background-size: cover;
+  background-color: #2564c2;
+  -webkit-mask-image: url(../assets/footers/background-footer.svg);
+  mask-image: url(../assets/footers/background-footer.svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.contenedor_footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.caja_footer{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+}
+
+.caja_footer .logo img{
+  width: 170px;
+}
+
+.caja_footer .terminos{
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+}
+
+.caja_footer h2{
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700;
+
+}
+
+.caja_footer{
+  margin: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+
+}
+
+.caja_footer a:hover{
+  opacity: 1;
+
+}
+
+.caja_foter a .fab{
+  font-size: 20px;
+}
+
+
+
+@media screen and(max-width: 764px){
+  .hero{
+
+    padding: auto;
+    
+  }
+  
+}
+
+
+#hero{
+  min-height: 100vh;
+  position: relative;
+
+}
+
+video{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit:cover;
+}
+
+.capa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #343434;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+
+.promo {
+  padding-top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  
+}
+
+
+.texto{
+  padding-top: 150px;
+  padding: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: gainsboro;
+ 
+}
+
+.primera_section{
+
+  height: 100%;
+  width: 100%;
+  
+  
+}
+
+button{
+  display: inline-block;
+  border: none;
+  height: 50px;
+  border-radius: 30px;
+  padding: 10px 0;
+  width: 200px;
+  background-color: #d8b131;
+  font-size: 1.8rem;
+  color: #343434;
+  font-weight: 800;
+  transition: 150ms;
+  margin-top: 40px;
+}
+
+
+
+.promo p{
+  font-size: 1.8rem;
+  text-align: center;
+  color: #e2dada;
+  font-weight: 800;
+}
+
+.titulo{
+  font-size:55px;
+  line-height: 100px;
+  font-weight: bold;
+  height: 100px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider{
+  color: #ffc107;
+  margin-left: 12px;
+  box-sizing: border-box;
+  animation: slider 6.5s linear infinite;
+
+}
+
+@keyframes slider{
+  0%{margin-top: -400px;}
+  5%{margin-top: -200px;}
+  30%{margin-top: -200px;}
+  35%{margin-top: 0px;}
+  65%{margin-top: 0px;}
+  70%{ margin-top: 200px;}
+  100%{ margin-top: 200px;}
+
+}
